@@ -6,10 +6,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'purple-ssd': "#584880",
+        'purple-ssd': "#564080",
         'purple-dark-ssd': "#4D3C73",
-        'orange-ssd': "#ea6548",
-        'skyblue-ssd': "#85b4ec",
+        'orange-ssd': "#ea6146",
+        'skyblue-ssd': "#80b2ef",
         'blue-ssd': "#3c447c",
       }
     },

@@ -1,3 +1,40 @@
-<section id="contacto" class="h-80">
-	<div>contact works!</div>
+<section id="contacto" class="pt-8">
+	<div class="max-w-screen-lg mx-auto">
+		<div class="grid grid-cols-1 md:grid-cols-2">
+			<div></div>
+			<div class="mx-4 my-6">
+				<div class='bg-white rounded shadow px-6 pt-6 pb-6 mb-4'>
+					<div class="text-center text-gray-700 mb-3">
+						<h2 class="text-xl font-medium mb-3">¡Contáctanos!</h2>
+						<p class="text-sm">Deja tus datos consultando sobre nuestros servicios y nos estaremos comunicando contigo.</p>
+					</div>
+					<form class="mt-6">
+						<div class='mb-3'>
+							<label class='block text-gray-700 text-sm font-medium mb-1' for='nombre'>Nombres <span class='text-red-600 text-sm'>*</span></label>
+							<input id='nombre' class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200' type='text' placeholder='Ingrese sus nombres' />
+						</div>
+						<div class='mb-3'>
+							<label class='block text-gray-700 text-sm font-medium mb-1' for='apellidos'>Apellidos <span class='text-red-600 text-sm'>*</span></label>
+							<input id='apellidos' class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200' type='text' placeholder='Ingrese sus apellidos' />
+						</div>
+						<div class='mb-3'>
+							<label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Correo electrónico <span class='text-red-600 text-sm'>*</span></label>
+							<input id='email' class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200' type='text' placeholder='Ingrese su email' />
+						</div>
+						<div class='mb-3'>
+							<label class='block text-gray-700 text-sm font-medium mb-1' for='empresa'>Compañia / Organización <span class='text-red-600 text-sm'>*</span></label>
+							<input id='empresa' class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200' type='text' placeholder='Ingrese su compañia' />
+						</div>
+						<div class='mb-3'>
+							<label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Mensaje <span class='text-red-600 text-sm'>*</span></label>
+							<textarea id='mensaje' rows="5" class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200 resize-none' placeholder='Escríbenos un mensaje'></textarea>
+						</div>
+						<div>
+							<button type="submit" class="w-full bg-gradient-to-r font-medium from-skyblue-ssd to-sky-300 text-white uppercase text-sm py-2.5 px-2 rounded hover:bg-gradient-to-r hover:from-purple-ssd hover:to-purple-500 transition-all duration-300">Enviar Mensaje</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
