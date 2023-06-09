@@ -1,0 +1,13 @@
+.animation-img-1 {
+    transform: translate(100%);
+    animation: slider;
+}
+
+@keyframes slider {
+    0% {
+        transform: translate(50%);
+    }
+    50% {
+        transform: translate(100%);
+    }
+}
