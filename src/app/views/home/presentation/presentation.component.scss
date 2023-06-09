@@ -1,0 +1,18 @@
+.background-main {
+    background-position: 50%;
+    position: relative;
+}
+
+.background-presentation {
+    background-image: url('../../../../assets/img/bg-main.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: auto;
+    vertical-align: baseline;
+    z-index: -10;
+}
