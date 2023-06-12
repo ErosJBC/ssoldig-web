@@ -9,6 +9,7 @@ import * as $ from 'jquery';
 export class AppComponent implements OnInit {
 	title = 'ssoldig-web';
 	showPage = false;
+	time_base = 2500;
 
 	ngOnInit(): void {
 		const startLoading = `
@@ -32,16 +33,16 @@ export class AppComponent implements OnInit {
 
 			setTimeout(() => {
 				$('#images').fadeOut('slow');
-			}, 2000);
+			}, this.time_base);
 			
 			setTimeout(() => {
 				$('#start-loading').append(gif);
-			}, 2500);
+			}, this.time_base + 500);
 
 			setTimeout(() => {
 				$('#start-loading').fadeOut('slow');
 				this.showPage = true;
-			}, 9000);
+			}, this.time_base + 7000);
 
 		});
 	}
