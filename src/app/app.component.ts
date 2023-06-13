@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent implements OnInit {
 	title = 'ssoldig-web';
-	showPage = false;
+	showPage = true;
 	time_base = 3250;
 
 	ngOnInit(): void {
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
 			setTimeout(() => {
 				$('#images').fadeOut('slow');
 			}, this.time_base);
-			
+
 			setTimeout(() => {
 				$('#start-loading').append(gif);
 			}, this.time_base + 500);

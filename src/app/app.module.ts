@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 
 import { FooterComponent, NavbarComponent } from './shared';
 import { HomeLayoutComponent } from './layouts';
-import { AboutUsComponent, ClientsComponent, ContactComponent, HomeComponent, PresentationComponent, SolutionsComponent, WhyChooseUsComponent } from './views';
+import { AboutUsComponent, ClientsComponent, ContactComponent, HomeComponent, OurTeamComponent, PresentationComponent, SolutionsComponent, WhyChooseUsComponent } from './views';
 
 @NgModule({
 	declarations: [
@@ -23,6 +23,7 @@ import { AboutUsComponent, ClientsComponent, ContactComponent, HomeComponent, Pr
 		PresentationComponent,
 		SolutionsComponent,
 		WhyChooseUsComponent,
+        OurTeamComponent,
 	],
 	imports: [
 		AppRoutingModule,
