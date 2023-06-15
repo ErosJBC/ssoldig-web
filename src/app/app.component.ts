@@ -8,8 +8,8 @@ import * as $ from 'jquery';
 })
 export class AppComponent implements OnInit {
 	title = 'ssoldig-web';
-	showPage = false;
-	time_base = 3250;
+	showPage = true;
+	time_base = 3300;
 
 	ngOnInit(): void {
 		const startLoading = `

@@ -2,3 +2,23 @@
 @import '_tailwind';
 @import '_icons-bootstrap';
 @import '_animate';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #d8d8d8;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border: 0.1rem solid #bebebe;
+    border-radius: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #564080;
+    transition: all 1s;
+}
