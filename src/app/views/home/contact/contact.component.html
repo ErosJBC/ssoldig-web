@@ -21,7 +21,7 @@
                                     class="text-red-500 font-medium ml-2 mt-0.5 block">Su nombre es requerido *</small>
                                 <small
                                     *ngIf="formContact.get('name')?.errors && formContact.get('name')?.touched && formContact.get('name')?.hasError('pattern')"
-                                    class="p-error font-medium ml-2 mt-0.5 block">No puede contener caracteres
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">No puede contener caracteres
                                     especiales *</small>
                             </div>
                             <div class='mb-3'>
