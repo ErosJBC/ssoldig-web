@@ -18,7 +18,7 @@
                                     type='text' placeholder='Ingrese sus nombres' formControlName="name" name="name" />
                                 <small
                                     *ngIf="formContact.get('name')?.errors && formContact.get('name')?.touched && formContact.get('name')?.hasError('required')"
-                                    class="text-red-600 font-medium ml-2 mt-0.5 block">Su nombre es requerido *</small>
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su nombre es requerido *</small>
                                 <small
                                     *ngIf="formContact.get('name')?.errors && formContact.get('name')?.touched && formContact.get('name')?.hasError('pattern')"
                                     class="p-error font-medium ml-2 mt-0.5 block">No puede contener caracteres
