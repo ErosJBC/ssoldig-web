@@ -11,7 +11,7 @@ export class PresentationComponent implements OnInit {
 
 	ngOnInit() {
 		const text = document.getElementById('writing');
-		this.writingEffect('¡Un mundo digital en tus manos!', 200, text);
+		this.writingEffect('¡Un mundo digital en tus manos!', 150, text);
 	}
 
 	writingEffect = (text: string = '', time: number = 200, element: any = '') => {
@@ -21,13 +21,14 @@ export class PresentationComponent implements OnInit {
 		let lengthText = text.length;
 		let write = setInterval(function () {
 			if (index === characters.length) {
-				element.innerHTML = text.substring(0, lengthText);
-				lengthText--;
-				if (lengthText === 0) {
-					element.innerHTML = '';
-					index = 0;
-					lengthText = text.length;
-				}
+				// element.innerHTML = text.substring(0, lengthText);
+				element.innerHTML = text;
+				// lengthText--;
+				// if (lengthText === 0) {
+					// element.innerHTML = '';
+					// index = 0;
+					// lengthText = text.length;
+				// }
 			} else {
 				element.innerHTML += characters[index];
 				index++;
