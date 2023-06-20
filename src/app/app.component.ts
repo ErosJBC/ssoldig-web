@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class AppComponent implements OnInit {
 	title = 'ssoldig-web';
-	activatedPage: boolean = false;
+	activatedPage: boolean = true;
 	time_base: number = 3300;
 
 	startLoading: string = `

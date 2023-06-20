@@ -28,6 +28,9 @@ export class ContactComponent implements OnInit {
 
     sendContactData = (event: Event) => {
         event.preventDefault();
-        console.log(this.formContact.value);
+        console.log(this.formContact);
+        if (this.formContact.valid) {
+            console.log('Hola')
+        } else this.formContact.markAllAsTouched();
     }
 }

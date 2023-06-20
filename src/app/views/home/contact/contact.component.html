@@ -1,7 +1,11 @@
 <section id="contacto" class="pt-8">
     <div class="max-w-screen-lg mx-auto">
         <div class="px-7 md:px-8 lg:px-10 xl:px-0">
-            <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
+                <div class="my-auto hidden md:block">
+                    <img src="../../../../assets/img/servicio-cliente.png"
+                        alt="Escríbenos un mensaje para recibir información de nuestros servicios" width="100%" height="100%">
+                </div>
                 <div class="mx-2 my-6">
                     <div class='bg-white rounded shadow px-6 pt-6 pb-6 mb-4'>
                         <div class="text-center text-gray-700 mb-3">
@@ -15,7 +19,7 @@
                                         class='text-red-600 text-sm'>*</span></label>
                                 <input id='nombre'
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200'
-                                    type='text' placeholder='Ingrese sus nombres' formControlName="name" name="name" />
+                                    type='text' placeholder='Ingrese sus nombres' value="name" formControlName="name" name="name" />
                                 <small
                                     *ngIf="formContact.get('name')?.errors && formContact.get('name')?.touched && formContact.get('name')?.hasError('required')"
                                     class="text-red-500 font-medium ml-2 mt-0.5 block">Su nombre es requerido *</small>
@@ -31,6 +35,9 @@
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200'
                                     type='text' placeholder='Ingrese sus apellidos' formControlName="lastName"
                                     name="lastName" />
+                                <small
+                                    *ngIf="formContact.get('lastName')?.errors && formContact.get('lastName')?.touched && formContact.get('lastName')?.hasError('required')"
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su apellido es requerido *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Correo
@@ -38,6 +45,9 @@
                                 <input id='email'
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200'
                                     type='text' placeholder='Ingrese su email' formControlName="email" name="email" />
+                                <small
+                                    *ngIf="formContact.get('email')?.errors && formContact.get('email')?.touched && formContact.get('email')?.hasError('required')"
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su email es requerido *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='empresa'>Compañia /
@@ -46,6 +56,9 @@
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200'
                                     type='text' placeholder='Ingrese su compañia' formControlName="company"
                                     name="company" />
+                                <small
+                                    *ngIf="formContact.get('company')?.errors && formContact.get('company')?.touched && formContact.get('company')?.hasError('required')"
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su organización es requerido *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Mensaje <span
@@ -54,6 +67,9 @@
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200 resize-none'
                                     placeholder='Escríbenos un mensaje' formControlName="message"
                                     name="message"></textarea>
+                                <small
+                                    *ngIf="formContact.get('message')?.errors && formContact.get('message')?.touched && formContact.get('message')?.hasError('required')"
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su mensaje es requerido *</small>
                             </div>
                             <div>
                                 <button type="submit"
@@ -62,10 +78,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-                <div class="my-auto hidden md:block">
-                    <img src="../../../../assets/img/pngegg.png"
-                        alt="Escríbenos un mensaje para recibir información de nuestros servicios">
                 </div>
             </div>
         </div>
