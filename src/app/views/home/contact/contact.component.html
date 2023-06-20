@@ -4,7 +4,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10">
                 <div class="my-auto hidden md:block">
                     <img src="../../../../assets/img/servicio-cliente.png"
-                        alt="Escríbenos un mensaje para recibir información de nuestros servicios" width="100%" height="100%">
+                        alt="Escríbenos un mensaje para recibir información de nuestros servicios" width="100%"
+                        height="100%">
                 </div>
                 <div class="mx-2 my-6">
                     <div class='bg-white rounded shadow px-6 pt-6 pb-6 mb-4'>
@@ -19,7 +20,8 @@
                                         class='text-red-600 text-sm'>*</span></label>
                                 <input id='nombre'
                                     class='shadow-sm placeholder:text-sm appearance-none border border-skyblue-ssd rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-1 focus:ring-purple-ssd focus:border-purple-200'
-                                    type='text' placeholder='Ingrese sus nombres' value="name" formControlName="name" name="name" />
+                                    type='text' placeholder='Ingrese sus nombres' value="name" formControlName="name"
+                                    name="name" />
                                 <small
                                     *ngIf="formContact.get('name')?.errors && formContact.get('name')?.touched && formContact.get('name')?.hasError('required')"
                                     class="text-red-500 font-medium ml-2 mt-0.5 block">Su nombre es requerido *</small>
@@ -37,7 +39,8 @@
                                     name="lastName" />
                                 <small
                                     *ngIf="formContact.get('lastName')?.errors && formContact.get('lastName')?.touched && formContact.get('lastName')?.hasError('required')"
-                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su apellido es requerido *</small>
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su apellido es requerido
+                                    *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Correo
@@ -48,6 +51,9 @@
                                 <small
                                     *ngIf="formContact.get('email')?.errors && formContact.get('email')?.touched && formContact.get('email')?.hasError('required')"
                                     class="text-red-500 font-medium ml-2 mt-0.5 block">Su email es requerido *</small>
+                                <small
+                                    *ngIf="formContact.get('email')?.errors && formContact.get('email')?.touched && formContact.get('email')?.hasError('email')"
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Ingrese un email correcto *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='empresa'>Compañia /
@@ -58,7 +64,8 @@
                                     name="company" />
                                 <small
                                     *ngIf="formContact.get('company')?.errors && formContact.get('company')?.touched && formContact.get('company')?.hasError('required')"
-                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su organización es requerido *</small>
+                                    class="text-red-500 font-medium ml-2 mt-0.5 block">Su organización es requerido
+                                    *</small>
                             </div>
                             <div class='mb-3'>
                                 <label class='block text-gray-700 text-sm font-medium mb-1' for='email'>Mensaje <span

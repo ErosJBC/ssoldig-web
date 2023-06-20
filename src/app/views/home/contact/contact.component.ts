@@ -18,9 +18,9 @@ export class ContactComponent implements OnInit {
 
     buildForm = () => {
         this.formContact = this.formBuilder.group({
-            name: ['', Validators.required, Validators.pattern('[a-zA-Z]{1,}')],
+            name: ['', [Validators.required, Validators.pattern('[a-zA-Z]{1,}')]],
             lastName: ['', Validators.required],
-            email: ['', Validators.required, Validators.email],
+            email: ['', [Validators.required, Validators.email]],
             company: ['', Validators.required],
             message: ['', Validators.required]
         })
@@ -28,7 +28,6 @@ export class ContactComponent implements OnInit {
 
     sendContactData = (event: Event) => {
         event.preventDefault();
-        console.log(this.formContact);
         if (this.formContact.valid) {
             console.log('Hola')
         } else this.formContact.markAllAsTouched();
